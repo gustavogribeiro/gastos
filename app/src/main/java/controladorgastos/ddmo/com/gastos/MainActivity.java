@@ -87,10 +87,10 @@ public class MainActivity extends Activity {
                     dbHandler.createContact(gastos);
                     gastoses.add(gastos);
                     contactAdapter.notifyDataSetChanged();
-                    Toast.makeText(getApplicationContext(), String.valueOf(nameTxt.getText()) + " has been added to your gastoses!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), String.valueOf(nameTxt.getText()) + "  foi adicionado aos seus gastos!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Toast.makeText(getApplicationContext(), String.valueOf(nameTxt.getText()) + " already exists. Please use a different name.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Já existe um lançamento com essas informações.", Toast.LENGTH_SHORT).show();
             }
         });
 
